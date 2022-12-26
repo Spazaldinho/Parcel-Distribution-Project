@@ -1,4 +1,5 @@
 # Parcel-Distribution-Project
+Language: Java
 Final Grade 12 Computer Science project, 2022.
 
 The goal of this assignment was to use the Java Swing graphics library to emulate a package distribution warehouse. 
