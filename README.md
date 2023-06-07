@@ -3,27 +3,27 @@
 - Date: Q1 2022
 - Level: Grade 12
 
+Parcel Distribution is a Java-based simulation of a conveyor belt system used in a parcel distribution center. It provides a graphical representation of a conveyor belt with moving parcels and various components.
 
-The goal of this assignment was to use the Java Swing graphics library to emulate a package distribution warehouse. 
+## Features
+Conveyor Belt: The main component of the simulation is the conveyor belt, represented by the simpleBelt class. It displays a belt with moving lines and rotating wheels, simulating the movement of parcels.
 
-Key concepts tested includes, but is not limited to:
-- Classes and Objects
-- Dynamic Graphics with Swing
-- Encapsulation
-- Polymorphism
-- Randomization
-- Images
-- Files
-- Arrays
-- Data Structures
-- Project management and Top-down design
+Parcels: Parcels are objects that move along the conveyor belt, representing packages to be distributed. They are represented by the parcel class and appear as colored polygons. Parcels have different types indicated by their colors (green, yellow, blue), reflecting their destinations or handling requirements.
 
-## Assignment Requirements:
-### How the Distribution Center works:
-Unsorted parcels enter the distribution center from the left on a conveyor belt. The parcels will pass over a scanner (in the middle of the distribution center) that will identify the parcel. The parcels are identified based on their colour: Blue – International, Green – Domestic and Yellow – Unknown. International parcels will move up from the scanner onto a conveyor belt. Domestic parcels will move right from the scanner on a conveyor belt. Unknown parcels will move down from the scanner on a conveyor belt.
-### How the Scanner works:
-When a parcel is touching the scanner a red light turns on to indicate that the scanner is working. The result of the scan is displayed as an image in the bottom left corner of the screen. International parcels will display a plane, domestic parcels will display a truck and unknown parcels will display a question mark. The scanned result will remain until the next parcel enters the scanner.
-### How the Conveyor belts work:
-The conveyor belt bringing the parcel into the Distribution Center has a switch. This switch turns the conveyor belt on and off. When it’s on, the switch is green and the parcels move towards the scanner. When it’s off, the switch is red and the parcels do not move. You can toggle the switch by pressing the spacebar. All the other conveyor belts only run if there are parcels on them.
-### Parcel Specs:
-There are 20 parcels to be sorted. Their colour is randomly chosen. Their sizes are randomly chosen (height: 20 – 50 pixels, length 20 – 50 pixels, width 10 – 50 pixels). Parcels will be separated by at least 200 pixels.
+Scanners: Scanners are components that scan the parcels as they pass by on the conveyor belt, ensuring proper tracking and sorting. Two types of scanners are available: scanner and scanner2. They are represented by polygons of different shapes and colors.
+
+Control: The simulation provides basic control functionality. Pressing the space bar toggles the movement of the conveyor belt, allowing pausing and resuming of the simulation. This control mechanism enables the simulation to be easily managed and observed.
+
+## Usage
+To run the Parcel Distribution simulation, follow these steps:
+
+Compile the Java source files using a Java compiler.
+Execute the Main class to start the simulation.
+The simulation window will open, displaying the conveyor belt and moving parcels.
+Press the space bar to pause or resume the movement of the conveyor belt.
+Observe the parcels moving along the belt and interacting with the scanners.
+
+## Dependencies
+The Parcel Distribution project relies on the following dependencies:
+
+Java Swing: Utilized for creating the graphical user interface (GUI) components and rendering the simulation.
